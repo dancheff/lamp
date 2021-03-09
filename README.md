@@ -19,7 +19,7 @@ LAMP is a powerful bash script for installation. You install with it Apache, PHP
 * If your server system: Debian/Ubuntu
 ```bash
 apt-get -y install wget git
-git clone https://github.com/teddysun/lamp.git
+git clone https://github.com/dancheff/lamp.git
 cd lamp
 chmod +x lamp.sh
 ./lamp.sh
