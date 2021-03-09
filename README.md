@@ -20,6 +20,7 @@ LAMP is a powerful bash script for installation. You install with it Apache, PHP
 ## Installation
 * If your server system: CentOS
 ```bash
+yum install -y wget git
 git clone https://github.com/dancheff/lamp.git
 cd lamp
 chmod +x lamp-centos.sh
