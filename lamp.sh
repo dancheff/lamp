@@ -3,7 +3,7 @@
 # Name: lamp.sh
 # Created By: dancheff
 # Description: Automagically installs the LAMP Server
-# OS: Ubuntu/Debian
+# OS: Ubuntu/Debian 
 
 set -e # exit with a non-zero status when there is an uncaught error
 
