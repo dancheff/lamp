@@ -13,9 +13,9 @@ LAMP is a powerful bash script for installation. You install with it Apache, PHP
 
 ## Software Version
 * Apache - 2.4
-* MariaDB - 10.4.18
+* MariaDB - 10.5.9 (up to date: 10.03.2021)
 * PHP - 7.3.27
-* phpMyAdmin (PHP 7.1+) - 5.1.0 (up to date)
+* phpMyAdmin (PHP 7.1+) - 5.1.0 (up to date: 10.03.2021)
 
 ## Installation
 * If your server system: Debian/Ubuntu
