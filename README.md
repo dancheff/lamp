@@ -25,4 +25,4 @@ chmod +x lamp.sh
 ./lamp.sh
 ```
 # Bugs & Issues
-Please feel free to report any bugs or issues to us, email to: dancheff.valentin@gmail.com or [open issues](#open issues) on Github.
+Please feel free to report any bugs or issues to us, email to: dancheff.valentin@gmail.com or [https://github.com/dancheff/lamp/issues](#open issues) on Github.
