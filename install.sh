@@ -2,8 +2,8 @@
 
 
 
-if [  -n "$(uname -a | grep Ubuntu | grep Debian)" ]; then
-    bash /lamp/debian/lamp.sh 
+if [  -n "$(uname -a | egrep -w 'Debian|Ubuntu')" ]; then
+    bash /root/lamp/debian/lamp.sh 
 else
-    bash /lamp/centos/lamp.sh
+    bash /root/lamp/centos/lamp.sh
 fi 
