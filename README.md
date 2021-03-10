@@ -18,21 +18,14 @@ LAMP is a powerful bash script for installation. You install with it Apache, PHP
 * phpMyAdmin (PHP 7.1+) - 5.1.0 (up to date: 10.03.2021)
 
 ## Installation
-* If your server system is: CentOS
 ```bash
-yum install -y wget git
+apt update && apt -y install wget git  # If your server system is: Debian/Ubuntu
+yum install -y wget git  # If your server system is: CentOS
 git clone https://github.com/dancheff/lamp.git
 cd lamp
-chmod +x lamp-centos.sh
-./lamp-centos.sh
+chmod +x install.sh
+./install.sh
 ```
-* If your server system is: Debian/Ubuntu
-```bash
-apt -y install wget git
-git clone https://github.com/dancheff/lamp.git
-cd lamp
-chmod +x lamp-debian.sh
-./lamp-debian.sh
-```
+
 ## Bugs & Issues
 Please feel free to report any bugs or issues to us, email to: dancheff.valentin@gmail.com or [open issue](http://github.com/dancheff/lamp/issues) on Github.
