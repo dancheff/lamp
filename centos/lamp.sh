@@ -48,7 +48,7 @@ systemctl start httpd
 echo -e "${Green}\n Installing MySQL${Color_Off}"
 sleep 2
 wget https://downloads.mariadb.com/MariaDB/mariadb_repo_setup
-echo "6528c910e9b5a6ecd3b54b50f419504ee382e4bdc87fa333a0b0fcd46ca77338 mariadb_repo_setup" | sha256sum -c -
+echo "6528c910e9b5a6ecd3b54b50f419504ee382e4bdc87fa333a0b0fcd46ca77338 mariadb_repo_setup" | sha256sum -c
 chmod +x mariadb_repo_setup
 ./mariadb_repo_setup --mariadb-server-version="mariadb-10.5"
 yum install -y MariaDB-server MariaDB-backup
