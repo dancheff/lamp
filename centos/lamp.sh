@@ -136,7 +136,7 @@ while true; do
       echo -e "${Green}You can access your phpMyAdmin at: http://$EXTERNAL_IP/$phpdir${Color_Off}"
       echo -e "${Green}Username: $username${Color_Off}"
       echo -e "${Green}Password: $PASS${Color_Off}"
-      break
+      break;
     else
       echo -e "${Red}\nYour directory contains special characters! Please try again!${Color_Off}"
     fi
@@ -145,7 +145,7 @@ while true; do
     echo -e "${Green}\nYou can access your phpMyAdmin at: http://$EXTERNAL_IP/phpmyadmin${Color_Off}"
     echo -e "${Green}Username: $username${Color_Off}"
     echo -e "${Green}Password: $PASS${Color_Off}"
-    break
+    break;
   fi
 done
 
