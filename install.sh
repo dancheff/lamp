@@ -8,8 +8,10 @@ echo "/_/\__,_/_/ /_/ /_/ .___/  /____/\__/\__,_/\___/_/|_|  /_/_/ /_/____/\__/\
 echo "                 /_/                                                                  "
 
 
-
-
+if [[ "$EUID" -ne 0 ]]; then
+  echo -e '\nERROR!!! SCRIPT MUST RUN WITH ROOT PRIVILEGES\n'
+  exit 1
+fi
 
 if [[ -n "$(uname -a | egrep -w 'Debian|Ubuntu')" ]]; then
     . /root/lamp/debian/lamp.sh 
