@@ -13,8 +13,10 @@ if [[ "$EUID" -ne 0 ]]; then
   exit 1
 fi
 
+cur_dir=$(cd -P -- "$(dirname -- "$0")" && pwd -P)
+
 if [[ -n "$(uname -a | egrep -w 'Debian|Ubuntu')" ]]; then
-    . /root/lamp/debian/lamp.sh 
+    . ${cur_dir}/include/debian.sh 
 else
-    . /root/lamp/centos/lamp.sh
+    . ${cur_dir}/include/centos.sh
 fi 
