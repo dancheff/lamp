@@ -17,11 +17,6 @@ normal="\e[0m"
 
 EXTERNAL_IP=$(wget -qO - http://geoip.ubuntu.com/lookup | sed -n -e 's/.*<Ip>\(.*\)<\/Ip>.*/\1/p')
 
-if [[ "$EUID" -ne 0 ]]; then
-  echo -e '\nERROR!!! SCRIPT MUST RUN WITH ROOT PRIVILEGES\n'
-  exit 1
-fi
-
 # update system
 echo -e "${Green}\n Updating System..${Color_Off}"
 sleep 2
