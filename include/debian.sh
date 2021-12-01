@@ -29,8 +29,8 @@ apt -y upgrade
 echo -e "${Green}\n Installing Apache2, PHP & Requirements${Color_Off}"
 sleep 2
 apt install apache2 apache2-utils libapache2-mod-php -y
-#apt install php-json php-xml php php-pdo php-zip php-common php-fpm php-mbstring php-cli php-mysql -y
-apt install php7.1 php7.1-cli php7.1-common php7.1-json php7.1-opcache php7.1-mysql php7.1-mbstring php7.1-mcrypt php7.1-zip php7.1-fpm -y
+apt install php-json php-xml php php-pdo php-zip php-common php-fpm php-mbstring php-cli php-mysql -y
+#apt install php7.1 php7.1-cli php7.1-common php7.1-json php7.1-opcache php7.1-mysql php7.1-mbstring php7.1-mcrypt php7.1-zip php7.1-fpm -y
 
 # install mysql
 echo -e "${Green}\n Installing MySQL${Color_Off}"
