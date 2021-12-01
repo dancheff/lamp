@@ -12,9 +12,9 @@ LAMP is a powerful bash script for installation. You install with it Apache, PHP
 * Ubuntu-20.x (recommend)
 
 ## Software Version
-* Apache - 2.4.38
+* Apache - 2.4.6
 * MariaDB - 10.5.13 (up to date: 01.12.2021)
-* PHP - 7.3.31
+* PHP - 7.3.33
 * phpMyAdmin - 5.1.1 (up to date: 01.12.2021)
 
 ## Installation
