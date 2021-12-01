@@ -36,7 +36,8 @@ apt install php-json php-xml php php-pdo php-zip php-common php-fpm php-mbstring
 echo -e "${Green}\n Installing MySQL${Color_Off}"
 sleep 2
 apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 0xF1656F24C74CD1D8
-add-apt-repository "deb [arch=amd64] http://mariadb.mirror.liquidtelecom.com/repo/10.5/debian $(lsb_release -cs) main"
+#add-apt-repository "deb [arch=amd64] http://mariadb.mirror.liquidtelecom.com/repo/10.5/debian $(lsb_release -cs) main"
+add-apt-repository 'deb [arch=amd64] http://mariadb.mirror.liquidtelecom.com/repo/10.5/debian/ buster main'
 apt update
 apt install mariadb-server mariadb-client -y
 
