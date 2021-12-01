@@ -22,7 +22,7 @@ echo -e "${Green}\n Updating System..${Color_Off}"
 sleep 2
 apt update -y
 apt -y install software-properties-common gnupg2 pwgen wget unzip
-add-apt-repository ppa:ondrej/php
+#add-apt-repository ppa:ondrej/php
 apt -y upgrade
 
 # install apache  
