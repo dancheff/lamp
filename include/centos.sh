@@ -53,13 +53,13 @@ systemctl start mariadb
 # download and install phpmyadmin
 echo -e "${Green}\n Installing phpMyAdmin${Color_Off}"
 sleep 2
-wget https://files.phpmyadmin.net/phpMyAdmin/5.1.0/phpMyAdmin-5.1.0-all-languages.zip
-unzip phpMyAdmin-5.1.0-all-languages.zip
-mv phpMyAdmin-5.1.0-all-languages /usr/share/phpMyAdmin
+wget https://files.phpmyadmin.net/phpMyAdmin/5.1.1/phpMyAdmin-5.1.1-all-languages.zip
+unzip phpMyAdmin-5.1.1-all-languages.zip
+mv phpMyAdmin-5.1.1-all-languages /usr/share/phpMyAdmin
 cp -pr /usr/share/phpMyAdmin/config.sample.inc.php /usr/share/phpMyAdmin/config.inc.php
 export SECRET=`php -r 'echo base64_encode(random_bytes(24));'`
 echo "\$cfg['blowfish_secret'] = '$SECRET';" >> /usr/share/phpMyAdmin/config.inc.php
-rm -rf phpMyAdmin-5.1.0-all-languages.zip
+rm -rf phpMyAdmin-5.1.1-all-languages.zip
 mkdir /usr/share/phpMyAdmin/tmp
 chmod 777 /usr/share/phpMyAdmin/tmp
 chown -R apache:apache /usr/share/phpMyAdmin
